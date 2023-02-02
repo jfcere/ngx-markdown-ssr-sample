@@ -32,7 +32,7 @@
             ],
             "scripts": [
               "node_modules/emoji-toolkit/lib/js/joypixels.min.js",
-              "node_modules/marked/lib/marked.js",
+              "node_modules/marked/marked.min.js",
               "node_modules/prismjs/prism.js",
               "node_modules/prismjs/components/prism-go.min.js",
               "node_modules/prismjs/components/prism-java.min.js",
@@ -42,7 +42,8 @@
               "node_modules/prismjs/components/prism-http.min.js",
               "node_modules/prismjs/components/prism-css.min.js",
               "node_modules/prismjs/plugins/line-highlight/prism-line-highlight.js",
-              "node_modules/katex/dist/katex.min.js"
+              "node_modules/katex/dist/katex.min.js",
+              "node_modules/katex/dist/contrib/auto-render.min.js"
             ]
           },
           "configurations": {
