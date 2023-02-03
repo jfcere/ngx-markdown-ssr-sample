@@ -8,6 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "start:dynamic-ssr": "npm run build:ssr && npm run serve:ssr",
+    "start:prerender-ssr": "npm run prerender && npm run serve:ssr",
     "dev:ssr": "ng run ngx-markdown-ssr-sample:serve-ssr",
     "serve:ssr": "node dist/ngx-markdown-ssr-sample/server/main.js",
     "build:ssr": "ng build && ng run ngx-markdown-ssr-sample:server",
