@@ -1,4 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { Tab } from './app.models';
 
 @Component({
   selector: 'app-root',
@@ -6,7 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'ngx-markdown-ssr-sample';
+  readonly tab = Tab;
+
+  activeTab = Tab.Src;
+
   markdown = `## Markdown __rulez__!
   ---
 
@@ -31,4 +36,10 @@ export class AppComponent {
 
   $\\pm\\sqrt{a^2 + b^2}$
   `;
+
+  srcPath = "https://raw.githubusercontent.com/jfcere/ngx-markdown/master/README.md";
+
+  setTab(tab: Tab): void {
+    this.activeTab = tab;
+  }
 }

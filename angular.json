@@ -34,14 +34,14 @@
               "node_modules/emoji-toolkit/lib/js/joypixels.min.js",
               "node_modules/marked/marked.min.js",
               "node_modules/prismjs/prism.js",
-              "node_modules/prismjs/components/prism-go.min.js",
-              "node_modules/prismjs/components/prism-java.min.js",
-              "node_modules/prismjs/components/prism-scss.min.js",
+              "node_modules/marked/marked.min.js",
+              "node_modules/prismjs/prism.js",
+
               "node_modules/prismjs/components/prism-bash.min.js",
+              "node_modules/prismjs/components/prism-diff.min.js",
+              "node_modules/prismjs/components/prism-javascript.min.js",
               "node_modules/prismjs/components/prism-typescript.min.js",
-              "node_modules/prismjs/components/prism-http.min.js",
-              "node_modules/prismjs/components/prism-css.min.js",
-              "node_modules/prismjs/plugins/line-highlight/prism-line-highlight.js",
+              "node_modules/emoji-toolkit/lib/js/joypixels.js",
               "node_modules/katex/dist/katex.min.js",
               "node_modules/katex/dist/contrib/auto-render.min.js"
             ]
@@ -114,6 +114,7 @@
           "builder": "@angular-eslint/builder:lint",
           "options": {
             "lintFilePatterns": [
+              "*.ts",
               "src/**/*.ts",
               "src/**/*.html"
             ]
@@ -169,7 +170,6 @@
       }
     }
   },
-  "defaultProject": "ngx-markdown-ssr-sample",
   "cli": {
     "analytics": false,
     "schematicCollections": [

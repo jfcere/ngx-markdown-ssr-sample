@@ -1,3 +1,20 @@
-<markdown [data]="markdown" katex emoji></markdown>
+<a class="tab" [class.tab--active]="activeTab === tab.Src" href="#" (click)="setTab(tab.Src)">src</a> |
+<a class="tab" [class.tab--active]="activeTab === tab.Data" href="#" (click)="setTab(tab.Data)">data</a> |
+<a class="tab" [class.tab--active]="activeTab === tab.Transclusion" href="#" (click)="setTab(tab.Transclusion)">transclusion</a>
 
-<markdown katex emoji>{{ markdown }}</markdown>
+<ng-container [ngSwitch]="activeTab">
+  <ng-container *ngSwitchCase="tab.Src">
+    <h1>Using [src] for remote content</h1>
+    <markdown [src]="srcPath" katex emoji></markdown>
+  </ng-container>
+
+  <ng-container *ngSwitchCase="tab.Data">
+    <h1>Using [data] input property</h1>
+    <markdown [data]="markdown" katex emoji></markdown>
+  </ng-container>
+
+  <ng-container *ngSwitchCase="tab.Transclusion">
+    <h1>Using Transclusion</h1>
+    <markdown katex emoji>{{ markdown }}</markdown>
+  </ng-container>
+</ng-container>

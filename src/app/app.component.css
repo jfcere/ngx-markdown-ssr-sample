@@ -1,0 +1,16 @@
+.tab,
+.tab:active,
+.tab:focus,
+.tab:visited {
+  color: #0d6cde;
+  text-decoration: none;
+}
+
+.tab:hover {
+  text-decoration: underline;;
+}
+
+.tab--active {
+  font-weight: bold;
+  text-decoration: none;
+}
