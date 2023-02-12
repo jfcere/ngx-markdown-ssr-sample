@@ -1,0 +1,15 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+
+  "files.trimTrailingWhitespace": true,
+
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false
+  },
+
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+
+  "vsicons.presets.angular": true
+}
